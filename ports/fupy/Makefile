@@ -32,11 +32,11 @@ include ../../py/py.mk
 
 CROSS_COMPILE ?= $(TRIPLE)-
 
-INC += -I.
-INC += -I../..
-INC += -I../../lib/mp-readline
-INC += -I$(BUILD)
 INC += -I$(BUILDINC_DIRECTORY)
+INC += -I$(BUILD)
+INC += -I../../lib/mp-readline
+INC += -I../..
+INC += -I.
 
 # Ensure assembler can also found our custom include files, for crt0
 ASFLAGS += -I$(BUILDINC_DIRECTORY)
