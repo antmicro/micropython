@@ -1,7 +1,8 @@
 #include "uart.h"
 #include "irq.h"
 #include "generated/csr.h"
-#include "hw/flags.h"
+#undef __UART_H
+#include "base/uart.h"
 
 /*
  * Buffer sizes must be a power of 2 so that modulos can be computed
